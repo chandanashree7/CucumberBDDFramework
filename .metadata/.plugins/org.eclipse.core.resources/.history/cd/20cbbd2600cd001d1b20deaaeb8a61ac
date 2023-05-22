@@ -1,0 +1,14 @@
+
+#@Login
+Feature: DSAlgoSignIn
+
+  Scenario: User Validate SignIn page
+    Given The user opens Chrome Browser and  Enter the LogIn page url "https://dsportalapp.herokuapp.com/login"
+    #And The user redirected to home page as the title "NumpyNinja" 
+    When user enter the <username>and<password>
+    And click on Login
+    Then It should navigate to the home page with a message " You are logged in  "
+
+
+    
+ 

@@ -1,0 +1,46 @@
+package stepdefinations;
+
+import org.openqa.selenium.WebDriver;
+
+import factory.DriverFactory;
+import io.cucumber.java.en.Given;
+import pages.RegistrationPage;
+
+public class Registration {
+	
+	
+	WebDriver driver;
+	
+	
+	
+	@Given("user opens browser and launch the url {string}")
+	public void user_opens_browser_and_launch_the_url(String string) {
+		driver = DriverFactory.getDriver();
+		RegistrationPage Rp= new RegistrationPage(driver);
+		Rp.getstart();
+		
+		
+	}
+
+	@When("user clicks on {string} button")
+	public void user_clicks_on_button(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("clicks on register link")
+	public void clicks_on_register_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("user should successfully able to see register page title {string}")
+	public void user_should_successfully_able_to_see_register_page_title(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+	
+
+}
